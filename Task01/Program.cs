@@ -6,11 +6,12 @@
 // a = 9, b = -3 -> да
 // a = -3 b = 9 -> нет
 
+Console.Clear();
 Console.Write("Введите первое целое число: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе целое число : ");
 int numberB = Convert.ToInt32(Console.ReadLine());
-if (numberA / numberB == numberB)
+if (numberA / numberB == numberB  && numberA % numberB == 0)
 {
     Console.WriteLine($"Первое число {numberA} квадрат второго числа {numberB}");
 }
