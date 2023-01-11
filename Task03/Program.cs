@@ -3,6 +3,7 @@
 // 3 -> Среда
 // 5 -> Пятница
 
+Console.Clear();
 Console.Write("Введите целое число от 1 до 7 (1 и 7 включая): ");
 int WeekDay = Convert.ToInt32(Console.ReadLine());
 if (WeekDay >= 1 && WeekDay <= 7)
