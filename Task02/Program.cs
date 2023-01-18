@@ -19,10 +19,10 @@ else
 
     if (a > b)
     {
-        Console.Write($" Число {a} максимальное.");
+        Console.Write($"Число {a} больше числа {b}.");
     }
     else
     {
-        Console.Write($"Число {b} максимальное.");
+        Console.Write($"Число {b} больше числа {a}.");
     }
 }
