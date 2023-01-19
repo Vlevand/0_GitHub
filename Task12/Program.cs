@@ -27,10 +27,13 @@ int secondDigit = Convert.ToInt32(Console.ReadLine());
 
 if (secondDigit == 0)
 {
-   Console.WriteLine("Ошибка! Второе число 0.");
+    Console.WriteLine("Ошибка! Второе число 0.");
 }
 else
 {
-   Console.WriteLine(Multiplicity(firstDigit, secondDigit)); 
+    if (firstDigit < secondDigit)
+        Console.WriteLine("Ошибка! Первое число меньше второго.");
+    else
+        Console.WriteLine(Multiplicity(firstDigit, secondDigit));
 }
 
