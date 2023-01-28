@@ -9,9 +9,9 @@ PrintArr(arr);
 int[] СompletionArr(int s, int x1, int x2)
 {
     int[] array = new int[s];
+    Random rnd = new Random();
     for (int i = 0; i < s; i++)
     {
-        Random rnd = new Random();
         array[i] = new Random().Next(x1, x2);
     }
     return array;
