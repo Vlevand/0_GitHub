@@ -18,7 +18,7 @@ int[] CopyArrayByElem(int[] arr)
     {
         copyArr[i] = array[i];
     }
-    return copyArr;
+    return copyArr; 
 }
 
 // заполнение массива случайными целыми числами в интевале от min до max
