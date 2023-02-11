@@ -23,7 +23,26 @@ bool ElemMatrixBefore90(int x, int y, int z)
     return x * y * z < 181;
 }
 
-// создание двумерного массива и заполнение его неповторяющемися двузначными цифрами
+// 1 вариант - создание двумерного массива и заполнение его неповторяющемися двузначными цифрами
+int[,,] CreateMatrix3D(int rows, int columns, int gorizontColomns)
+{
+    int number = -99;
+    int[,,] matrix3D = new int[rows, columns, gorizontColomns];
+    for (int i = 0; i < matrix3D.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix3D.GetLength(1); j++)
+        {
+            for (int g = 0; g < matrix3D.GetLength(2); g++)
+            {
+                matrix3D[i, j, g] = number;
+                number++;
+            }
+        }
+    }
+    return matrix3D;
+}
+
+/* 2 вариант создание двумерного массива и заполнение его неповторяющемися двузначными цифрами через список
 int[,,] CreateMatrix3D(int rows, int columns, int gorizontColomns)
 {
     int number = -99;
@@ -52,7 +71,7 @@ int[,,] CreateMatrix3D(int rows, int columns, int gorizontColomns)
         }
     }
     return matrix3D;
-}
+} */
 
 // вывод двумерного массива
 void PrintMatrix3D(int[,,] matrix3D)
